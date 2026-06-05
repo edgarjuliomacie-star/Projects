@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde na Mão</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Saúde na Mão</h1>
+        <p>Consultor de Saúde Digital para Moçambique</p>
+    </header>
+
+    <main>
+        <section id="cadastro" class="active">
+            <h2>Cadastro do Paciente</h2>
+            <form id="form-cadastro">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" required>
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" required>
+
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" required>
+                    <option value="">Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="contato">Contato:</label>
+                <input type="tel" id="contato" required>
+
+                <label for="historico">Histórico Médico Básico (alergias, doenças crônicas):</label>
+                <textarea id="historico"></textarea>
+
+                <button type="submit">Próximo</button>
+            </form>
+        </section>
+
+        <section id="triagem">
+            <h2>Triagem de Sintomas</h2>
+            <div id="perguntas">
+                <!-- Perguntas serão inseridas dinamicamente -->
+            </div>
+            <button id="proximo-pergunta" style="display:none;">Próxima Pergunta</button>
+            <button id="finalizar-triagem" style="display:none;">Finalizar Triagem</button>
+        </section>
+
+        <section id="hipoteses">
+            <h2>Hipóteses de Condições</h2>
+            <p>Baseado nos sintomas, possíveis condições:</p>
+            <ul id="lista-hipoteses"></ul>
+            <p><strong>Aviso:</strong> Esta análise não substitui um médico. Para diagnóstico e prescrição, o caso será revisado por um profissional de saúde licenciado.</p>
+            <button id="encaminhar">Encaminhar para Médico Licenciado</button>
+        </section>
+
+        <section id="resultado">
+            <h2>Resultado</h2>
+            <p id="diagnostico"></p>
+            <p id="receita"></p>
+            <h3>Dicas de Prevenção</h3>
+            <ul id="dicas"></ul>
+        </section>
+
+        <section id="acompanhamento">
+            <h2>Acompanhamento</h2>
+            <label for="evolucao">Registrar Evolução dos Sintomas:</label>
+            <textarea id="evolucao"></textarea>
+            <button id="salvar-acompanhamento">Salvar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Saúde na Mão. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

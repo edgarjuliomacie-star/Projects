@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saúde na Mão</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="script.js">
+
+</head>
+
+<body>
+<div class="wrap">
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <div class="logo-icon">💊</div>
+    <div class="logo-text">Saúde <span>na Mão</span></div>
+  </div>
+
+  <nav>
+    <a onclick="showScreen('home')" id="nav-home" class="active">Início</a>
+    <a onclick="showScreen('triage')" id="nav-triage">Triagem</a>
+    <a onclick="showScreen('dashboard')" id="nav-dashboard">Painel</a>
+    <a onclick="showScreen('cadastro')" id="nav-cadastro">Cadastro</a>
+  </nav>
+
+  <button class="btn-header" onclick="showScreen('triage')">Iniciar Consulta</button>
+</header>
+
+<!-- HOME SCREEN -->
+<div id="screen-home" class="screen active">
+  <div class="hero">
+    <div class="hero-badge">Sistema activo · Moçambique</div>
+    <h1>Saúde <span class="accent">acessível</span><br>para todo <span class="flag">Moçambique</span></h1>
+    <p>Triagem digital inteligente, validada por médicos licenciados. Diagnóstico e receita médica sem precisar de enfrentar filas nos hospitais centrais.</p>
+
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="showScreen('triage')">▶ Iniciar Triagem</button>
+      <button class="btn-ghost" onclick="showScreen('cadastro')">Criar Conta</button>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat"><div class="stat-num">3.2M+</div><div class="stat-label">Moçambicanos sem acesso fácil a saúde</div></div>
+      <div class="stat"><div class="stat-num">98%</div><div class="stat-label">Precisão da triagem com IA treinada</div></div>
+      <div class="stat"><div class="stat-num">&lt;24h</div><div class="stat-label">Tempo para validação médica</div></div>
+      <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Legal — parceria com clínicas licenciadas</div></div>
+    </div>
+
+    <div class="moz-badge">
+      <div class="moz-flag"></div></div></div></div></div>
+        Desenvolvido para a realidade moçambicana
+      </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Como funciona</div>
+    <div class="section-title">Um caminho claro do sintoma <span>ao tratamento</span></div>
+    <div class="flow-container">
+      <div class="flow-step">
+        <div class="flow-num">1</div>
+        <div class="flow-line"></div>
+        <div class="flow-content">
+          <h4>📋 Cadastro e Perfil</h4>
+          <p>Crie a sua conta com histórico médico, alergias e condições crónicas. Dados encriptados e protegidos.</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">2</div>
+        <div class="flow-line"></div>
+        <div class="flow-content">
+          <h4>🤖 Triagem com IA</h4>
+          <p>Responda perguntas sobre os seus sintomas. A nossa IA treinada com médicos moçambicanos gera hipóteses clínicas.</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">3</div>
+        <div class="flow-line"></div>
+        <div class="flow-content">
+          <h4>👨‍⚕️ Validação Médica</h4>
+          <p>Um médico licenciado revisa o seu caso através da plataforma e confirma o diagnóstico em até 24 horas.</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">4</div>
+        <div class="flow-line"></div>
+        <div class="flow-content">
+          <h4>📄 Receita Digital</h4>
+          <p>Receba o diagnóstico validado e receita médica digital, aceite em farmácias parceiras em todo o país.</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">5</div>
+        <div class="flow-content">
+          <h4>📊 Acompanhamento</h4>
+          <p>Registe a evolução dos seus sintomas. Lembretes de medicação. Consulta presencial automática se necessário.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="padding-top:0">
+    <div class="section-label">Funcionalidades</div>
+    <div class="section-title">Pensado para <span>Moçambique</span></div>
+    <div class="features-grid">
+      <div class="feat-card">
+        <div class="feat-icon">🌐</div>
+        <h3>Funciona Offline</h3>
+        <p>Triagem disponível sem internet. Dados sincronizados quando a ligação for restaurada — ideal para zonas rurais.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🗣️</div>
+        <h3>Línguas Locais</h3>
+        <p>Suporte para Português, Changana, Ndau e Emakhuwa. Interface acessível mesmo com baixa literacia digital.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🔐</div>
+        <h3>Dados Protegidos</h3>
+        <p>Criptografia de ponta a ponta. Conformidade com normas de protecção de dados do Ministério da Saúde.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">💊</div>
+        <h3>Receitas Legais</h3>
+        <p>Parceria formal com clínicas licenciadas. Cada receita é assinada digitalmente por um médico registado.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🏥</div>
+        <h3>Referência Hospitalar</h3>
+        <p>Casos graves são encaminhados automaticamente para o hospital mais próximo com carta de referência digital.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">📱</div>
+        <h3>M-Pesa & e-Mola</h3>
+        <p>Pagamento de consultas via M-Pesa e e-Mola. Consulta gratuita para casos urgentes com parceria do MISAU.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TRIAGEM SCREEN -->
+<div id="screen-triage" class="screen">
+  <div class="triage-wrap">
+    <div class="triage-header">
+      <h2>🩺 Triagem de Sintomas</h2>
+      <p>Responda com honestidade. As suas informações são confidenciais e ajudam o médico a dar o melhor diagnóstico.</p>
+    </div>
+
+    <div class="disclaimer">
+      <span>⚠️</span>
+      <p><strong>Aviso:</strong> Esta triagem <strong>não substitui</strong> um médico. Em caso de emergência (dificuldade respiratória, dor no peito, inconsciência), ligue imediatamente para o 1120 (SAMU Moçambique).</p>
+    </div>
+
+    <div class="progress-bar-wrap">
+      <div class="progress-label">
+        <span id="prog-label">Pergunta 1 de 6</span>
+        <span id="prog-pct">17%</span>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="prog-fill" style="width:17%"></div></div>
+    </div>
+
+    <div id="q-container"></div>
+
+    <div class="triage-nav">
+      <button class="btn-back" id="btn-back" onclick="prevQ()" style="display:none">← Anterior</button>
+      <button class="btn-next" id="btn-next" onclick="nextQ()">Próxima →</button>
+    </div>
+  </div>
+</div>
+
+<!-- RESULT SCREEN -->
+<div id="screen-result" class="screen">
+  <div class="result-wrap">
+    <div class="result-header">
+      <div class="result-status">🤖</div>
+      <h2>Análise Concluída</h2>
+      <p>Hipóteses geradas pela IA. Aguarda validação por médico licenciado em até 24h.</p>
+    </div>
+
+    <div class="alert-box">
+      <div class="icon">📋</div>
+      <p><strong>Próximo passo:</strong> O seu caso foi enviado para revisão. Um médico parceiro da Clínica Central de Maputo irá validar este diagnóstico e, se necessário, emitir uma receita digital.</p>
+    </div>
+
+    <div class="result-grid">
+      <div class="result-card wide">
+        <h4>Condições prováveis</h4>
+        <ul class="condition-list">
+          <li>
+            <span>Malária (Plasmodium falciparum)</span>
+            <div style="display:flex;align-items:center;gap:8px">
+              <div class="prob-bar-wrap"><div class="prob-bar"><div class="prob-fill high" style="width:72%"></div></div></div>
+              <span class="prob-num">72%</span>
+            </div>
+          </li>
+          <li>
+            <span>Febre tifoide</span>
+            <div style="display:flex;align-items:center;gap:8px">
+              <div class="prob-bar-wrap"><div class="prob-bar"><div class="prob-fill mid" style="width:18%"></div></div></div>
+              <span class="prob-num">18%</span>
+            </div>
+          </li>
+          <li>
+            <span>Síndrome gripal viral</span>
+            <div style="display:flex;align-items:center;gap:8px">
+              <div class="prob-bar-wrap"><div class="prob-bar"><div class="prob-fill low" style="width:10%"></div></div></div>
+              <span class="prob-num">10%</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="result-card">
+        <h4>Sintomas registados</h4>
+        <ul class="tips-list">
+          <li>Febre alta (39–40°C)</li>
+          <li>Dores de cabeça intensas</li>
+          <li>Calafrios e suores</li>
+          <li>Fadiga e fraqueza</li>
+          <li>Há 3 dias</li>
+        </ul>
+      </div>
+
+      <div class="result-card">
+        <h4>Cuidados imediatos</h4>
+        <ul class="tips-list">
+          <li>Beba muita água e líquidos</li>
+          <li>Repouso absoluto</li>
+          <li>Paracetamol para a febre (máx. 4g/dia)</li>
+          <li>Evite automedicação com antimaláricos</li>
+          <li>Aguarde confirmação médica</li>
+        </ul>
+      </div>
+
+      <div class="result-card wide">
+        <h4>Estado da consulta</h4>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+          <div style="flex:1;min-width:120px;background:rgba(45,201,126,0.08);border:1px solid rgba(45,201,126,0.2);border-radius:10px;padding:14px;text-align:center">
+            <div style="font-size:20px;margin-bottom:6px">✅</div>
+            <div style="font-size:12px;color:var(--green-bright);font-weight:600">Triagem concluída</div>
+          </div>
+          <div style="flex:1;min-width:120px;background:rgba(245,200,66,0.06);border:1px solid rgba(245,200,66,0.2);border-radius:10px;padding:14px;text-align:center">
+            <div style="font-size:20px;margin-bottom:6px">⏳</div>
+            <div style="font-size:12px;color:var(--yellow-moz);font-weight:600">Validação médica<br><span style="font-weight:400;color:var(--text3)">Em análise</span></div>
+          </div>
+          <div style="flex:1;min-width:120px;background:var(--card2);border:1px solid var(--border2);border-radius:10px;padding:14px;text-align:center">
+            <div style="font-size:20px;margin-bottom:6px">📄</div>
+            <div style="font-size:12px;color:var(--text3);font-weight:600">Receita digital<br><span style="font-weight:400">Aguarda médico</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="result-actions">
+      <button class="btn-action primary" onclick="showScreen('triage')">Nova Triagem</button>
+      <button class="btn-action secondary" onclick="showScreen('dashboard')">Ver Histórico</button>
+      <button class="btn-action danger">🚨 É urgente</button>
+    </div>
+  </div>
+</div>
+
+<!-- CADASTRO SCREEN -->
+<div id="screen-cadastro" class="screen">
+  <div class="cadastro-wrap">
+    <h2>Criar Conta</h2>
+    <p class="sub">Registe-se para aceder a triagem, histórico médico e receitas digitais.</p>
+
+    <div class="form-group">
+      <label class="form-label">NOME COMPLETO</label>
+      <input class="form-input" type="text" placeholder="Ex: Maria João Machava">
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">DATA DE NASCIMENTO</label>
+        <input class="form-input" type="date">
+      </div>
+      <div class="form-group">
+        <label class="form-label">SEXO</label>
+        <select class="form-select">
+          <option value="">Seleccionar</option>
+          <option>Feminino</option>
+          <option>Masculino</option>
+          <option>Outro</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">NÚMERO DE TELEMÓVEL (M-Pesa / e-Mola)</label>
+      <input class="form-input" type="tel" placeholder="+258 84 XXX XXXX">
+    </div>
+    <div class="form-group">
+      <label class="form-label">LOCALIDADE / BAIRRO</label>
+      <select class="form-select">
+        <option value="">Seleccionar província</option>
+        <option>Maputo Cidade</option>
+        <option>Maputo Província</option>
+        <option>Gaza</option>
+        <option>Inhambane</option>
+        <option>Sofala</option>
+        <option>Manica</option>
+        <option>Tete</option>
+        <option>Zambézia</option>
+        <option>Nampula</option>
+        <option>Niassa</option>
+        <option>Cabo Delgado</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label">DOENÇAS CRÓNICAS (seleccione as que tiver)</label>
+      <div class="checkbox-group" id="chronic-checks">
+        <div class="checkbox-item" onclick="toggleCheck(this)">Hipertensão</div>
+        <div class="checkbox-item" onclick="toggleCheck(this)">Diabetes</div>
+        <div class="checkbox-item" onclick="toggleCheck(this)">Asma</div>
+        <div class="checkbox-item" onclick="toggleCheck(this)">VIH/SIDA</div>
+        <div class="checkbox-item" onclick="toggleCheck(this)">Tuberculose</div>
+        <div class="checkbox-item" onclick="toggleCheck(this)">Drepanócitose</div>
+        <div class="checkbox-item" onclick="toggleCheck(this)">Nenhuma</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">ALERGIAS CONHECIDAS</label>
+      <input class="form-input" type="text" placeholder="Ex: Penicilina, Aspirina... (ou deixe em branco)">
+    </div>
+    <div class="form-group">
+      <label class="form-label">SENHA</label>
+      <input class="form-input" type="password" placeholder="Mínimo 8 caracteres">
+    </div>
+    <button class="btn-primary" style="width:100%;padding:15px;font-size:15px;margin-top:8px" onclick="showScreen('dashboard')">
+      Criar Conta Segura 🔒
+    </button>
+    <p style="font-size:12px;color:var(--text3);text-align:center;margin-top:16px;line-height:1.6">
+      Ao criar conta, aceita os Termos de Uso e Política de Privacidade.<br>Os seus dados são protegidos conforme as normas do MISAU.
+    </p>
+  </div>
+</div>
+
+<!-- DASHBOARD SCREEN -->
+<div id="screen-dashboard" class="screen">
+  <div class="dash-wrap">
+    <div class="dash-top">
+      <div>
+        <h2>👋 Bom dia, Maria</h2>
+        <p>Maputo Cidade · Última consulta: há 3 dias</p>
+      </div>
+      <button class="btn-primary" onclick="showScreen('triage')">+ Nova Triagem</button>
+    </div>
+
+    <div class="dash-grid">
+      <div class="dash-card">
+        <div class="d-icon">🩺</div>
+        <div class="d-val">4</div>
+        <div class="d-label">Consultas realizadas</div>
+      </div>
+      <div class="dash-card">
+        <div class="d-icon">📄</div>
+        <div class="d-val">2</div>
+        <div class="d-label">Receitas emitidas</div>
+      </div>
+      <div class="dash-card">
+        <div class="d-icon">⏳</div>
+        <div class="d-val">1</div>
+        <div class="d-label">Em validação médica</div>
+      </div>
+      <div class="dash-card">
+        <div class="d-icon">💊</div>
+        <div class="d-val">2</div>
+        <div class="d-label">Medicações activas</div>
+      </div>
+    </div>
+
+    <h3 style="font-size:16px;font-weight:600;margin-bottom:16px">Histórico de Consultas</h3>
+
+    <div class="history-item">
+      <div class="hist-icon">🦟</div>
+      <div class="hist-main">
+        <h4>Suspeita de Malária</h4>
+        <p>23 Mar 2026 · Dr. António Cossa · Clínica Central Maputo</p>
+      </div>
+      <span class="hist-badge warn">Pendente</span>
+    </div>
+    <div class="history-item">
+      <div class="hist-icon">🤧</div>
+      <div class="hist-main">
+        <h4>Síndrome Gripal</h4>
+        <p>10 Mar 2026 · Dra. Fátima Nhantumbo · Online</p>
+      </div>
+      <span class="hist-badge ok">Resolvido</span>
+    </div>
+    <div class="history-item">
+      <div class="hist-icon">🤕</div>
+      <div class="hist-main">
+        <h4>Cefaleia Tensional</h4>
+        <p>22 Fev 2026 · Dr. João Bila · Online</p>
+      </div>
+      <span class="hist-badge ok">Resolvido</span>
+    </div>
+    <div class="history-item">
+      <div class="hist-icon">🫁</div>
+      <div class="hist-main">
+        <h4>Tosse persistente</h4>
+        <p>05 Jan 2026 · Dra. Conceição Macuácua · Presencial</p>
+      </div>
+      <span class="hist-badge ok">Resolvido</span>
+    </div>
+
+    <div style="background:rgba(45,201,126,0.05);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-top:24px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+      <div style="font-size:32px">💊</div>
+      <div style="flex:1">
+        <div style="font-size:14px;font-weight:600;margin-bottom:4px">Medicação activa: Paracetamol 500mg</div>
+        <div style="font-size:12px;color:var(--text3)">3x por dia · Próxima dose em 2 horas</div>
+      </div>
+      <button style="padding:10px 18px;border-radius:9px;background:rgba(45,201,126,0.12);border:1px solid rgba(45,201,126,0.3);color:var(--green-bright);font-family:'Sora',sans-serif;font-size:13px;font-weight:600;cursor:pointer">Tomei ✓</button>
+    </div>
+  </div>
+</div>
+
+<!-- BOTTOM NAV -->
+<div class="bottom-nav">
+  <div class="bottom-nav-inner">
+    <div class="nav-item active" onclick="showScreen('home')"><span class="ni">🏠</span>Início</div>
+    <div class="nav-item" onclick="showScreen('triage')"><span class="ni">🩺</span>Triagem</div>
+    <div class="nav-item" onclick="showScreen('dashboard')"><span class="ni">📊</span>Painel</div>
+    <div class="nav-item" onclick="showScreen('cadastro')"><span class="ni">👤</span>Perfil</div>
+  </div>
+</div>
+
+</div><!-- .wrap -->
+
+</body>
+</html>
